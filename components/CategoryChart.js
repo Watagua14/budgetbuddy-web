@@ -1,7 +1,7 @@
-'use client';
+use client';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 
-// Formateador interno (CRC)
+// Formateo CRC local (no pasamos funciones por props)
 const CRC = new Intl.NumberFormat(undefined, {
   style: 'currency',
   currency: 'CRC',
