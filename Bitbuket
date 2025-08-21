@@ -1,49 +1,5 @@
-// =============================
-// BudgetBuddy Web (Next.js 14 + PWA + Tailwind + Recharts)
-// Preparado para desplegar en Vercel. Moneda por defecto: CRC (₡)
-// Estructura de archivos (copiar y pegar en un repo nuevo):
-// =============================
-
-// FILE: package.json
-{
-  "name": "budgetbuddy-web",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "14.2.5",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "recharts": "2.12.7",
-    "next-pwa": "^5.6.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.10"
-  }
-}
-
 // FILE: next.config.mjs
-import withPWA from 'next-pwa';
 
-const isProd = process.env.NODE_ENV === 'production';
-
-export default withPWA({
-  dest: 'public',
-  register: true,
-  skipWaiting: true,
-  disable: !isProd, // sólo activa PWA en producción
-  // Opcional: fallbacks offline si los agregas
-  // fallbacks: { document: '/offline' }
-})({
-  reactStrictMode: true,
-  experimental: { appDir: true }
-});
 
 // FILE: postcss.config.js
 module.exports = {
