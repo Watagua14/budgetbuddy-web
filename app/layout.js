@@ -1,8 +1,11 @@
 export const metadata = {
   title: 'BudgetBuddy Web',
   description: 'Presupuesto mensual — PWA offline',
-  manifest: '/manifest.webmanifest',
-  themeColor: '#6366f1'
+  manifest: '/manifest.webmanifest'
+};
+
+export const viewport = {
+  themeColor: '#6366f1',
 };
 
 import './globals.css';
