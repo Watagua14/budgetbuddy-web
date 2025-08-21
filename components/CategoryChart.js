@@ -1,4 +1,4 @@
-use client';
+'use client';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 
 // Formateo CRC local (no pasamos funciones por props)
