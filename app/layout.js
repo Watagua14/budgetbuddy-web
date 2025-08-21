@@ -3,10 +3,7 @@ export const metadata = {
   description: 'Presupuesto mensual — PWA offline',
   manifest: '/manifest.webmanifest'
 };
-
-export const viewport = {
-  themeColor: '#6366f1',
-};
+export const viewport = { themeColor: '#6366f1' };
 
 import './globals.css';
 
