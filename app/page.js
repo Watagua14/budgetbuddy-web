@@ -144,7 +144,10 @@ export default function Page() {
               <Empty text="Sin gastos en este mes" />
             ) : (
               <div className="w-full h-64">
-                <ResponsiveContainer width="100%" height="100%">
+                {expenseByCat.length === 0 ? (
+  <div className="card text-center text-gray-600">Sin gastos en este mes</div>
+) : (
+  <CategoryChart data={expenseByCat} />
                   <PieChart>
                     <Pie data={expenseByCat} dataKey="total" nameKey="name" innerRadius={50} outerRadius={80}>
                       {expenseByCat.map((e, i) => <Cell key={i} fill={e.color} />)}
