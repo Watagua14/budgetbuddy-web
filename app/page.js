@@ -1,4 +1,6 @@
 'use client';
+export const dynamic = 'force-dynamic';   // evita SSG de esta página
+export const fetchCache = 'force-no-store';
 import { useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 const CategoryChart = dynamic(() => import('../components/CategoryChart'), { ssr: false });
