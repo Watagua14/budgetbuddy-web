@@ -1,6 +1,7 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
+import { useMemo, useState } from 'react';
+import dynamic from 'next/dynamic';
+const CategoryChart = dynamic(() => import('../components/CategoryChart'), { ssr: false });
 
 // ----- Tipos simples -----
 // Category { id, name, icon, color, isIncome }
