@@ -145,9 +145,10 @@ export default function Page() {
             ) : (
               <div className="w-full h-64">
                 {expenseByCat.length === 0 ? (
-  <div className="card text-center text-gray-600">Sin gastos en este mes</div>
-) : (
-  <CategoryChart data={expenseByCat} />
+              {expenseByCat.length === 0 ? (
+              <div className="card text-center text-gray-600">Sin gastos en este mes</div>
+            ) : (
+              <CategoryChart data={expenseByCat} />
                   <PieChart>
                     <Pie data={expenseByCat} dataKey="total" nameKey="name" innerRadius={50} outerRadius={80}>
                       {expenseByCat.map((e, i) => <Cell key={i} fill={e.color} />)}
