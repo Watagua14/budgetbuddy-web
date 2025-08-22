@@ -1,7 +1,6 @@
-import dynamic from 'next/dynamic';
-
-export const dynamic = 'force-dynamic';
-export const fetchCache = 'force-no-store';
+'use client';
+import { useEffect, useMemo, useState } from 'react';
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 
 export const metadata = {
   title: 'BudgetBuddy Web',
